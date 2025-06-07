@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="logo">
+        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin logo">
+        <h1 class="odin-text">ODIN</h1>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="intro">
+        <p><strong>This is not a real online service!</strong> You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p><strong><em>You know</em> you want to.</strong></p>
+      </div>
+
+      <form class="form">
+        <h2>Let’s do this!</h2>
+        <div class="form-row">
+          <div>
+            <label>First Name</label>
+            <input type="text" placeholder="Thor" required >
+          </div>
+          <div>
+            <label>Last Name</label>
+            <input type="text" placeholder="Odinson" required >
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label>Email</label>
+            <input type="email" required >
+          </div>
+          <div>
+            <label>Phone Number</label>
+            <input type="tel" pattern="^\d{10}$" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label>Password</label>
+            <input type="password" class="error" required minlength="6">
+          </div>
+          <div>
+            <label>Confirm Password</label>
+            <input type="password" class="error" required minlength="6">
+          </div>
+        </div>
+        <button type="submit">Create Account</button>
+        <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
