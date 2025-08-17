@@ -1,0 +1,244 @@
+/* ====== Base Styles ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* ====== Sidebar ====== */
+.sidebar {
+  width: 240px;
+  background-color: #007bff;
+  color: white;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #005fc1;
+}
+
+/* ====== Main Content ====== */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header / Topbar */
+.topbar {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Greeting Section */
+.greeting {
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.greeting img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.greeting p {
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.greeting h2 {
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Action Buttons */
+.actions {
+  background: white;
+  padding: 16px 24px;
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.actions button {
+  padding: 8px 16px;
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background: #005fc1;
+}
+
+/* Main Dashboard Content */
+.content {
+  flex: 1;
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+}
+
+/* Projects Section */
+.projects {
+  flex: 2;
+}
+
+.projects h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-left: 5px solid #f4c542;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h4 {
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card .icons {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #666;
+  display: flex;
+  gap: 12px;
+}
+
+/* Sidebar Right Section */
+.sidebar-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Announcements */
+.announcements, .trending {
+  background: white;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.announcements h3,
+.trending h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.announcements ul,
+.trending ul {
+  list-style: none;
+}
+
+.announcements li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+.announcements li strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #000;
+}
+
+/* Trending List */
+.trending li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+svg{}
